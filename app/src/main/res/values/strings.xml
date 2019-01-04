@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Deck Manger PLS2</string>
+    <string name="more_view">Incrementa a quantidade da Cidade</string>
+    <string name="minus_view">Decrementa a quantidade da Cidade</string>
+    <string name="delete_view">Apaga a Cidade</string>
+
+    <string-array name="lista_cores">
+        <item>Amarelo</item>
+        <item>Azul</item>
+        <item>Preto</item>
+        <item>Vermelho</item>
+    </string-array>
+</resources>
