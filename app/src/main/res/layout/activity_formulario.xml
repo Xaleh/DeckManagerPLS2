@@ -9,13 +9,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/name_new_city"
-        android:id="@+id/formulario_nome"/>
+        android:id="@+id/formulario_nome"
+        android:inputType="textNoSuggestions"/>
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/number_new_city"
-        android:id="@+id/formulario_quantidade"/>
+        android:id="@+id/formulario_quantidade"
+        android:inputType="numberDecimal"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -29,25 +31,29 @@
             android:layout_height="wrap_content"
             android:id="@+id/formulario_cor">
 
-            <android.support.v7.widget.AppCompatRadioButton
+            <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_amarelo"/>
+                android:text="@string/radio_amarelo"
+                android:theme="@style/MyRadioButtonYellow"/>
 
             <android.support.v7.widget.AppCompatRadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_azul" />
+                android:text="@string/radio_azul"
+                android:theme="@style/MyRadioButtonBlue"/>
 
             <android.support.v7.widget.AppCompatRadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_preto"/>
+                android:text="@string/radio_preto"
+                android:theme="@style/MyRadioButtonBlack"/>
 
             <android.support.v7.widget.AppCompatRadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/radio_vermelho"/>
+                android:text="@string/radio_vermelho"
+                android:theme="@style/MyRadioButtonRed"/>
 
         </RadioGroup>
 

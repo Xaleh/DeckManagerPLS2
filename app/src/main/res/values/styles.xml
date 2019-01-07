@@ -17,4 +17,26 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 
+    <style name="MyRadioButtonYellow" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlActivated">@color/colorCityYellow</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <style name="MyRadioButtonBlue" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlActivated">@color/colorCityBlue</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <style name="MyRadioButtonBlack" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlActivated">@color/colorCityBlack</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+    <style name="MyRadioButtonRed" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:colorControlActivated">@color/colorCityRed</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+
+
+
 </resources>
