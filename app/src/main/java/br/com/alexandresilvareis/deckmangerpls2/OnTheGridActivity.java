@@ -44,6 +44,14 @@ public class OnTheGridActivity extends AppCompatActivity {
             }
         });
 
+        FloatingActionButton epidemia = findViewById(R.id.recycler_view_layout_fab_epidemia);
+        epidemia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(OnTheGridActivity.this, "Epidemia começou!!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
         registerForContextMenu(listaCidades);
     }
 
@@ -62,7 +70,7 @@ public class OnTheGridActivity extends AppCompatActivity {
         carregaLista();
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_add_cidade, menu);
         return true;
@@ -80,13 +88,12 @@ public class OnTheGridActivity extends AppCompatActivity {
                 break;
         }
         return super.onOptionsItemSelected(item);
-    }
+    }*/
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
 
         AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo) menuInfo;
         final Cidade cidade = (Cidade) listaCidades.getItemAtPosition(info.position);
-
     }
 }

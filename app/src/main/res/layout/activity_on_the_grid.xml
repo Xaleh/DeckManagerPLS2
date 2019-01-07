@@ -16,6 +16,26 @@
         tools:visibility="visible"/>
 
     <android.support.design.widget.FloatingActionButton
+        android:id="@+id/recycler_view_layout_fab_epidemia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/ic_launcher_background"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_warning_white_24dp"/>
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/recycler_view_layout_fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:srcCompat="@drawable/ic_add_white_24dp"/>-->
+
+    <android.support.design.widget.FloatingActionButton
         android:id="@+id/recycler_view_layout_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

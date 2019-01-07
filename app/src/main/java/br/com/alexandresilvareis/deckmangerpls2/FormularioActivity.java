@@ -21,7 +21,7 @@ public class FormularioActivity extends AppCompatActivity {
         helper = new FormularioHelper(this);
 
         Intent intent = getIntent();
-        Cidade cidade= (Cidade) intent.getSerializableExtra("aluno");
+        Cidade cidade= (Cidade) intent.getSerializableExtra("cidade");
         if (cidade != null) {
             helper.preencheFormulario(cidade);
         }
