@@ -3,11 +3,15 @@
     <string name="more_view">Incrementa a quantidade da Cidade</string>
     <string name="minus_view">Decrementa a quantidade da Cidade</string>
     <string name="delete_view">Apaga a Cidade</string>
+    <string name="radio_amarelo">Amarelo</string>
+    <string name="radio_azul">Azul</string>
+    <string name="radio_preto">Preto</string>
+    <string name="radio_vermelho">Vermelho</string>
+    <string name="choose_color">Escolha a cor da nova cidade:</string>
+    <string name="number_new_city">Quantidade da nova cidade</string>
+    <string name="name_new_city">Nome da nova cidade</string>
+    <string name="OK">OK</string>
+    <string name="add_new_city">Adicionar Cidade</string>
+    <string name="epidemia">Epidemia</string>
 
-    <string-array name="lista_cores">
-        <item>Amarelo</item>
-        <item>Azul</item>
-        <item>Preto</item>
-        <item>Vermelho</item>
-    </string-array>
 </resources>
