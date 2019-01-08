@@ -8,8 +8,6 @@ class FormularioHelper {
 
     private final EditText campoNome;
     private final EditText campoQuantidade;
-    private final RadioGroup radioGroup;
-    private final String campoCor;
 
     private RadioButton campoAmarelo;
     private RadioButton campoAzul;
@@ -21,16 +19,33 @@ class FormularioHelper {
     public FormularioHelper(FormularioActivity activity) {
         campoNome = activity.findViewById(R.id.formulario_nome);
         campoQuantidade = activity.findViewById(R.id.formulario_quantidade);
-        radioGroup = activity.findViewById(R.id.formulario_cor);
-        campoCor = String.valueOf(activity.findViewById(radioGroup.getCheckedRadioButtonId()));
         cidade = new Cidade();
     }
 
     public Cidade pegaCidade() {
         cidade.setNome(campoNome.getText().toString());
         cidade.setQuantidade(Integer.valueOf(campoQuantidade.getText().toString()));
-        cidade.setCor(campoCor);
+        cidade.setTotal_cidades(somaNumeroCidades());
+        /*cidade.setCor(FormularioActivity.pegaCor());*/
+        cidade.setChance_de_sair(calculaChance());
         return cidade;
+    }
+
+    private Integer somaNumeroCidades() {
+        Integer total;
+        Integer totalCidades;
+        totalCidades = cidade.getTotal_cidades();
+        if (totalCidades == null) {
+            totalCidades = 0;
+        }
+        total = totalCidades + cidade.getQuantidade();
+        return total;
+    }
+
+    private Integer calculaChance() {
+        Integer chance;
+        chance = (cidade.getQuantidade()/cidade.getTotal_cidades()) * 100;
+        return chance;
     }
 
     public void preencheFormulario (Cidade cidade) {

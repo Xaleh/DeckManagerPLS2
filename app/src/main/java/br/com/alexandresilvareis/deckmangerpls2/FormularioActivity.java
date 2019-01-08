@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 
@@ -40,7 +41,29 @@ public class FormularioActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.menu_formulario_ok:
 
+                RadioGroup corCidade = findViewById(R.id.formulario_cor);
+                String cor = null;
+
+                switch (corCidade.getCheckedRadioButtonId()){
+                    case R.id.amarelo:
+                        cor = "Amarelo";
+                        break;
+
+                    case R.id.azul:
+                        cor = "Azul";
+                        break;
+
+                    case R.id.preto:
+                        cor = "Preto";
+                        break;
+
+                    case R.id.vermelho:
+                        cor = "Vermelho";
+                        break;
+                }
+
                 Cidade cidade = helper.pegaCidade();
+                cidade.setCor(cor);
 
                 CityModel dao = new CityModel(this);
                 if (cidade.getId() != null) {
@@ -58,4 +81,5 @@ public class FormularioActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }

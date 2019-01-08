@@ -32,24 +32,28 @@
             android:id="@+id/formulario_cor">
 
             <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/amarelo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_amarelo"
                 android:theme="@style/MyRadioButtonYellow"/>
 
             <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/azul"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_azul"
                 android:theme="@style/MyRadioButtonBlue"/>
 
             <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/preto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_preto"
                 android:theme="@style/MyRadioButtonBlack"/>
 
             <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/vermelho"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/radio_vermelho"

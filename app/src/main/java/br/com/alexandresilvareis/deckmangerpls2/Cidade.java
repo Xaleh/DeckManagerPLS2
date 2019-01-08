@@ -9,6 +9,7 @@ public class Cidade implements Serializable {
     private String cor;
     private Integer quantidade;
     private Integer chance_de_sair;
+    private Integer total_cidades;
 
     public Long getId() {
         return id;
@@ -41,5 +42,11 @@ public class Cidade implements Serializable {
     @Override
     public String toString() {
         return getId() + " - " + getNome();
+    }
+
+    public Integer getTotal_cidades() { return total_cidades; }
+
+    public void setTotal_cidades(Integer total_cidades) {
+        this.total_cidades = total_cidades;
     }
 }
